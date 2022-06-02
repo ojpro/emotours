@@ -17,12 +17,13 @@ class HideDebugbar
     public function handle($request, Closure $next, $guard = null)
     {
         if(strpos($request->path(),'install') === false){
-
+            // TODO: uncomment it
+            // just to use debugbar iw ill enable it now
             if (!Auth::user() || !Auth::user()->hasPermissionTo('system_log_view')) {
-                \Debugbar::disable();
+                \Debugbar::enable();
             }
             if($request->segment(1) === 'messenger'){
-                \Debugbar::disable();
+                \Debugbar::enable();
             }
         }
         return $next($request);
