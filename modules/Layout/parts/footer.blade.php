@@ -75,6 +75,9 @@
 @if(Auth::id())
 	@include('Media::browser')
 @endif
+
+@include('Layout::parts.back-to-top')
+
 <link rel="stylesheet" href="{{asset('libs/flags/css/flag-icon.min.css')}}">
 
 {!! \App\Helpers\Assets::css(true) !!}
@@ -133,7 +136,8 @@
 @endif
 
 {!! \App\Helpers\Assets::js(true) !!}
-
+{{-- Custom JS Script --}}
+<script src="{{ asset('js/custom.js') }}"></script>
 @yield('footer')
 
 @php \App\Helpers\ReCaptchaEngine::scripts() @endphp

@@ -1,1 +1,48 @@
 /*# sourceMappingURL=app.custom.css.map */
+/* Custom Global Styles */
+html{
+    scroll-behavior: smooth;
+}
+/* Animations  */
+@keyframes bounce2 {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0) rotate(-90deg);}
+    40% {transform: translateY(-30px) rotate(-90deg);}
+    60% {transform: translateY(-15px) rotate(-90deg);}
+}
+
+/**
+
+f1f1f1-fb5607-fc6600-ff7417-ffbf00-1e1e1e-3a86ff
+ */
+/* START: BACK TO TOP */
+
+#back-to-top {
+    position:fixed;
+    right:8px;
+    bottom:20vh;
+    cursor:pointer;
+    padding: 4px 4px 4px 8px;
+    transform: rotate(-90deg);
+    border: 2px solid #1E1E1E;
+    border-radius: 1.2rem;
+    color: #1e1e1e;
+    text-decoration: none;
+    transition: all 250ms ease-in-out;
+    background-color: transparent;
+}
+
+#back-to-top svg{
+    width: 24px;
+}
+
+#back-to-top:hover {
+    background-color: #1E1E1E;
+    opacity: .8;
+    color: #f1f1f1;
+    transition: all 300ms linear;
+    animation: bounce2 .8s ease;
+}
+.hidden{
+    display: none;
+}
+/* END: BACK TO TOP */
