@@ -19,4 +19,12 @@ $(document).ready(function(){
         $("html, body").animate({ scrollTop: 0 ,},halfHeight / 2);
         return false;
     });
+
+    $('#datedropper').dateDropper(
+        {
+            onChange: function (res) {
+                $('#datedropper').text(res.date.m + '-' + res.date.d + '-' + res.date.Y);
+            }
+        }
+    );
 });

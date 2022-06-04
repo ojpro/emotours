@@ -28,9 +28,6 @@
     <link href="{{ asset('libs/select2/css/select2.min.css') }}" rel="stylesheet">
     <link href="{{ asset('dist/frontend/css/notification.css') }}" rel="newest stylesheet">
     <link href="{{ asset('dist/frontend/css/app.css?_ver='.config('app.version')) }}" rel="stylesheet">
-    <!--  START: Custom CSS Styles  -->
-    <link rel="stylesheet" href="{{ asset('css/app.custom.css') }}">
-    <!--  END: Custom CSS Styles  -->
     <link rel="stylesheet" type="text/css" href="{{ asset("libs/daterange/daterangepicker.css") }}" >
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -128,6 +125,10 @@
     @endif
 
     @php event(new \Modules\Layout\Events\LayoutEndHead()); @endphp
+
+    <!--  START: Custom CSS Styles  -->
+    <link rel="stylesheet" href="{{ asset('css/app.custom.css') }}">
+    <!--  END: Custom CSS Styles  -->
 
 </head>
 <body class="frontend-page {{ !empty($row->header_style) ? "header-".$row->header_style : "header-normal" }} {{$body_class ?? ''}} @if(setting_item_with_lang('enable_rtl')) is-rtl @endif @if(is_api()) is_api @endif">
