@@ -20,11 +20,4 @@ $(document).ready(function(){
         return false;
     });
 
-    $('#datedropper').dateDropper(
-        {
-            onChange: function (res) {
-                $('#datedropper').text(res.date.m + '-' + res.date.d + '-' + res.date.Y);
-            }
-        }
-    );
 });

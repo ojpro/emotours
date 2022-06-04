@@ -33,3 +33,17 @@
         <button class="btn btn-primary btn-search" type="submit">{{__("Search")}}</button>
     </div>
 </form>
+
+@section('footer')
+    <script src="{{ asset('js/datedropper.js') }}"></script>
+    <!--  Using DateDropper  -->
+    <script>
+        $('#datedropper').dateDropper(
+            {
+                onChange: function (res) {
+                    $('#datedropper').text(res.date.m + '-' + res.date.d + '-' + res.date.Y);
+                }
+            }
+        );
+    </script>
+@endsection

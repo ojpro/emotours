@@ -34,5 +34,4 @@
             src="{{ asset('module/tour/js/tour.js?_ver='.config('app.version')) }}">
     </script>
 
-    <script src="{{ asset('js/datedropper.js') }}"></script>
 @endsection
