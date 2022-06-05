@@ -20,4 +20,58 @@ $(document).ready(function(){
         return false;
     });
 
+
+    //Featured
+    const swiperFeatured = new Swiper('.swiper-featured', {
+        // Optional parameters
+        direction: 'horizontal',
+
+        slidesPerView: 1,
+        spaceBetween: 10,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable:true,
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+
+        breakpoints: {
+            640: {
+                slidesPerView: 3,
+                spaceBetween: 15
+            }
+        }
+    });
+    // Catgory
+    const swiperCatgeory = new Swiper('.swiper-category', {
+        // Optional parameters
+        slidesPerView: 1,
+        spaceBetween: 10,
+        observeParents: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-category-pagination',
+            clickable: true
+        },
+
+        breakpoints: {
+            640: {
+                slidesPerView: 3,
+                spaceBetween: 15
+            }
+        }
+    });
+
 });

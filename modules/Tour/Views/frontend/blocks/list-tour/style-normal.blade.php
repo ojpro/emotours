@@ -1,3 +1,9 @@
+@section('head')
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+@endsection
 <div class="container">
     @if($title)
         <div class="title">
@@ -9,7 +15,7 @@
             @endif
         </div>
     @endif
-    <div class="list-item">
+    <div class="list-item swiper-featured p-4">
         @if($style_list === "normal")
             <div class="row">
                 @foreach($rows as $row)
@@ -20,11 +26,14 @@
             </div>
         @endif
         @if($style_list === "carousel")
-            <div class="owl-carousel">
+            <div class="swiper-wrapper">
                 @foreach($rows as $row)
                     @include('Tour::frontend.layouts.search.loop-gird')
                 @endforeach
             </div>
+            <!-- navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         @endif
         @if($style_list === "box_shadow")
             <div class="row row-eq-height">

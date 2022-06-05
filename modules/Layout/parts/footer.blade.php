@@ -137,6 +137,9 @@
 
 {!! \App\Helpers\Assets::js(true) !!}
 {{-- Custom JS Script --}}
+{{-- TODO: this script shouldn't be loaded in all pages --}}
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
 <script src="{{ asset('js/custom.js') }}"></script>
 @yield('footer')
 

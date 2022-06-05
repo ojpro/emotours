@@ -74,3 +74,10 @@ f1f1f1-fb5607-fc6600-ff7417-ffbf00-1e1e1e-3a86ff
     opacity: 0;
 }
 /* END: STICKY SEARCH FORM */
+
+/* START: SWIPER CAROUSEL */
+.swiper-category .swiper-slide {
+    width: 200px;
+    height: 500px;
+}
+/* END: SWIPER CAROUSEL */
