@@ -10,10 +10,10 @@
                 @endif
             </div>
         @endif
-        <div class="list-item">
-            <div class="row">
+        <div class="list-item swiper-featured p-4">
+            <div class="swiper-wrapper">
                 @foreach($rows as $row)
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 swiper-slide">
                         @include('News::frontend.blocks.list-news.loop')
                     </div>
                 @endforeach
