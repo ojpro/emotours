@@ -1,9 +1,3 @@
-@section('head')
-    <link
-            rel="stylesheet"
-            href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-    />
-@endsection
 <div class="container">
     @if($title)
         <div class="title">

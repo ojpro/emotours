@@ -127,6 +127,7 @@
     @php event(new \Modules\Layout\Events\LayoutEndHead()); @endphp
 
     <!--  START: Custom CSS Styles  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="{{ asset('css/app.custom.css') }}">
     <!--  END: Custom CSS Styles  -->
 
