@@ -80,4 +80,7 @@ f1f1f1-fb5607-fc6600-ff7417-ffbf00-1e1e1e-3a86ff
     width: 200px;
     height: 500px;
 }
+.swiper-locations .swiper-wrapper{
+    transition-timing-function : linear;
+}
 /* END: SWIPER CAROUSEL */

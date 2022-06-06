@@ -1,13 +1,13 @@
 //* Back to top
-$(document).ready(function(){
+$(document).ready(function () {
     let pageHeight = $(document).height();
     let halfHeight = pageHeight / 2
     let currentPosition = halfHeight;
 
     // on page scroll
-    $(window).scroll(function(){
+    $(window).scroll(function () {
         // if the page scroll to down more than the half show the button
-        if ($(this).scrollTop() > halfHeight ) {
+        if ($(this).scrollTop() > halfHeight) {
             $('#back-to-top').fadeIn().toggleClass('hidden');
         } else {
             // other ways hide it
@@ -15,8 +15,8 @@ $(document).ready(function(){
         }
     });
     // go back to to the top of the page with animation
-    $('#back-to-top').click(function(){
-        $("html, body").animate({ scrollTop: 0 ,},halfHeight / 2);
+    $('#back-to-top').click(function () {
+        $("html, body").animate({scrollTop: 0,}, halfHeight / 2);
         return false;
     });
 
@@ -32,7 +32,7 @@ $(document).ready(function(){
         // If we need pagination
         pagination: {
             el: '.swiper-pagination',
-            clickable:true,
+            clickable: true,
         },
 
         // Navigation arrows
@@ -72,6 +72,22 @@ $(document).ready(function(){
                 spaceBetween: 15
             }
         }
+    });
+    // Locations
+    const swiperLocations = new Swiper('.swiper-locations', {
+        direction: 'horizontal',
+        loop: true,
+        speed: 6000,
+        autoplay: {
+            delay: 0,
+            disableOnInteraction: false,
+        },
+        slidesPerView: 1,
+        spaceBetween: 10,
+        slidesPerView: 'auto',
+        grabCursor: true,
+        mousewheelControl: true,
+        keyboardControl: true,
     });
 
 });

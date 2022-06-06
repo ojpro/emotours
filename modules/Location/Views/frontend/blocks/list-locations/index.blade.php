@@ -8,7 +8,7 @@
                 {{$desc}}
             </div>
         @endif
-        @if(!empty($rows))<div class="list-item swiper-featured">
+        @if(!empty($rows))<div class="list-item swiper-locations p-4">
                 <div class="swiper-wrapper">
                     @foreach($rows as $key=>$row)
                         <?php
