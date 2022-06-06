@@ -90,4 +90,18 @@ $(document).ready(function () {
         keyboardControl: true,
     });
 
+    //Hotels
+    const swiperHotels = new Swiper('.swiper-hotels', {
+        // Optional parameters
+        direction: 'horizontal',
+
+        slidesPerView: 1,
+        spaceBetween: 10,
+        breakpoints: {
+            640: {
+                slidesPerView: 3,
+                spaceBetween: 15
+            }
+        }
+    });
 });

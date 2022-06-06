@@ -10,18 +10,18 @@
                 {{$desc}}
             </div>
         @endif
-        <div class="list-item">
+        <div class="list-item swiper-hotels p-4">
             @if($style_list === "normal")
-                <div class="row">
+                <div class="row swiper-wrapper">
                     @foreach($rows as $row)
-                        <div class="col-lg-{{$col ?? 3}} col-md-6">
+                        <div class="col-lg-{{$col ?? 3}} col-md-6 swiper-slide">
                             @include('Hotel::frontend.layouts.search.loop-grid')
                         </div>
                     @endforeach
                 </div>
             @endif
             @if($style_list === "carousel")
-                <div class="owl-carousel">
+                <div class="swiper-wrapper">
                     @foreach($rows as $row)
                         @include('Hotel::frontend.layouts.search.loop-grid')
                     @endforeach
