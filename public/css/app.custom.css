@@ -1,5 +1,9 @@
 /*# sourceMappingURL=app.custom.css.map */
 /* Custom Global Styles */
+*, *::before, *::after {
+    transition: all 250ms linear;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -19,7 +23,7 @@ html {
 
 /**
 
-f1f1f1-fb5607-fc6600-ff7417-ffbf00-1e1e1e-3a86ff
+#f1f1f1-#fb5607-#fc6600-#ff7417-#ffbf00-#1e1e1e-#3a86ff
  */
 /* START: BACK TO TOP */
 
@@ -60,7 +64,7 @@ f1f1f1-fb5607-fc6600-ff7417-ffbf00-1e1e1e-3a86ff
     top: 0;
     left: 0;
     right: 0;
-    z-index: 101;
+    z-index: 10;
 }
 
 /* END: BACK TO TOP */
@@ -73,6 +77,7 @@ f1f1f1-fb5607-fc6600-ff7417-ffbf00-1e1e1e-3a86ff
     z-index: -1;
     opacity: 0;
 }
+
 /* END: STICKY SEARCH FORM */
 
 /* START: SWIPER CAROUSEL */
@@ -80,7 +85,42 @@ f1f1f1-fb5607-fc6600-ff7417-ffbf00-1e1e1e-3a86ff
     width: 200px;
     height: 500px;
 }
-.swiper-locations .swiper-wrapper{
-    transition-timing-function : linear;
+
+.swiper-locations .swiper-wrapper {
+    transition-timing-function: linear;
 }
+
 /* END: SWIPER CAROUSEL */
+
+/* START: FILTER FORM */
+/*@media (max-width:991px) {*/
+/*    .bravo_filter{*/
+/*        width: 100%;*/
+/*        height: 100vh;*/
+/*        padding:1rem;*/
+/*        position: fixed;*/
+/*        inset: 0;*/
+/*        z-index: 102;*/
+/*        background-color: #fff;*/
+/*    }*/
+/*}*/
+/* END: FILTER FORM */
+
+/* START: MAIN HEADER DESIGN */
+.signup-item:hover,
+.login-item:hover {
+    background-color: white;
+}
+
+.signup-item:hover > a,
+.login-item:hover > a {
+    color: #1a2b48 !important;
+}
+
+@media (max-width: 991px) {
+    .bravo-menu-mobile .user-profile > ul:first-of-type{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
