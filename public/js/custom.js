@@ -7,7 +7,7 @@ $(document).ready(function () {
     // on page scroll
     $(window).scroll(function () {
         // if the page scroll to down more than the half show the button
-        if ($(this).scrollTop() > halfHeight) {
+        if ($(this).scrollTop() > pageHeight / 3) {
             $('#back-to-top').fadeIn().toggleClass('hidden');
         } else {
             // other ways hide it
@@ -16,7 +16,7 @@ $(document).ready(function () {
     });
     // go back to to the top of the page with animation
     $('#back-to-top').click(function () {
-        $("html, body").animate({scrollTop: 0,}, halfHeight / 2);
+        $("html, body").animate({scrollTop: 0,}, halfHeight / 3 );
         return false;
     });
 
