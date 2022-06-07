@@ -25,7 +25,7 @@ $(document).ready(function () {
     const swiperFeatured = new Swiper('.swiper-featured', {
         // Optional parameters
         direction: 'horizontal',
-
+        freemode:true,
         slidesPerView: 1,
         spaceBetween: 10,
 
@@ -57,6 +57,7 @@ $(document).ready(function () {
     const swiperCatgeory = new Swiper('.swiper-category', {
         // Optional parameters
         slidesPerView: 1,
+        freemode:true,
         spaceBetween: 10,
         observeParents: true,
 
@@ -77,6 +78,7 @@ $(document).ready(function () {
     const swiperLocations = new Swiper('.swiper-locations', {
         direction: 'horizontal',
         loop: true,
+        freemode:true,
         speed: 6000,
         autoplay: {
             delay: 0,
@@ -94,7 +96,7 @@ $(document).ready(function () {
     const swiperHotels = new Swiper('.swiper-hotels', {
         // Optional parameters
         direction: 'horizontal',
-
+        freemode:true,
         slidesPerView: 1,
         spaceBetween: 10,
         breakpoints: {
